@@ -1,24 +1,28 @@
 # Maya.SendSms
 
-Example of using the Maya.BulkGate.Sms library 
+Example of using the Maya.BulkGate.Sms library.
 
 
 Install nuget libraries from the package manager console:
 
-```
+`````cmd
 PM> Install-Package Maya.BulkGate.Sms
 PM> Install-Package Maya.BulkGate.Sms.Extension.Microsoft.DependencyInjection
-```
+
+`````
 
 Add configuration to your appsettings.json:
 
-```json
+
+`````json
 {
     "MayaBulkGateSms": {
         "ApplicationId": "your APPLICATION_ID",
         "ApplicationToken": "your APPLICATION_TOKEN"
     }
 }
+
+`````
 
 Register to service collection in `Startup.cs`:
 
